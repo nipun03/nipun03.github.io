@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Speech to Text</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles_model.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1><u>Speech to Text</u></h1>
+            <h3 class="no-browser-support">Browser Doesn't Support the Web Speech API.</h3>
+            <div class="app">
+                <div class="input-single">
+                <textarea id="note-textarea" placeholder="Company Name" rows="5" cols="80"></textarea>
+                <textarea id="note-textarea1" placeholder="Model Name" rows="5" cols="80"></textarea>
+                <textarea id="note-textarea2" placeholder="Year" rows="5" cols="80"></textarea>
+                </div>
+                <button id="start-record-btn" class = "btn btn-danger btn-lg" title="Start Recording">Record <i class="fa fa-microphone"></i>
+                </button>
+                <!-- <button id="stop-record-btn" class = "btn btn-danger" title="Stop Recording">Stop Recording</button> -->
+                  <p id="recording-instructions">Press <strong>Record</strong> button and allow access.</p>
+                  <p id="rec-word"></p>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script_model.js"></script>
+    </body>
+</html>
